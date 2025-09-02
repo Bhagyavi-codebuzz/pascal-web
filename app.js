@@ -136,27 +136,27 @@ class PageManager {
         return titles[pageId] || titles['home'];
     }
 
-    setupSmoothScrolling() {
-        const headerOffset = 68; // adjust to your header height
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href.length > 1) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        const elementPosition = target.getBoundingClientRect().top + window.scrollY;
-                        const offsetPosition = elementPosition - headerOffset;
+    // setupSmoothScrolling() {
+    //     const headerOffset = 68; // adjust to your header height
+    //     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //         anchor.addEventListener('click', function (e) {
+    //             const href = this.getAttribute('href');
+    //             if (href.length > 1) {
+    //                 e.preventDefault();
+    //                 const target = document.querySelector(href);
+    //                 if (target) {
+    //                     const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+    //                     const offsetPosition = elementPosition - headerOffset;
 
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: "smooth"
-                        });
-                    }
-                }
-            });
-        });
-    }
+    //                     window.scrollTo({
+    //                         top: offsetPosition,
+    //                         behavior: "smooth"
+    //                     });
+    //                 }
+    //             }
+    //         });
+    //     });
+    // }
 
 
     setupFormValidation() {

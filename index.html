@@ -7,6 +7,7 @@
   <title>Pascal Enterprise - Empowering Telecommunications Through Innovation</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg">
 </head>
 
 <body>
@@ -600,35 +601,10 @@
   </script>
 
   <script>
-    document.querySelectorAll(".nav-link").forEach(link => {
-      link.addEventListener("click", function (e) {
-        const href = this.getAttribute("href");
+    const headerOffset = 68; // fixed header height
 
-        if (href === "#" || href === "#home") {
-          e.preventDefault();
-          // scroll to top
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        } else {
-          // normal navigation logic
-          const id = href.replace("index.html", "").replace("#", "");
-          if (id) {
-            e.preventDefault();
-            const el = document.getElementById(id);
-            if (el) {
-              el.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-          }
-        }
-      });
-    });
-
-  </script>
-
-  <script>
-  window.addEventListener("DOMContentLoaded", function () {
-    const headerOffset = 68;
-    if (window.location.hash) {
-      const target = document.querySelector(window.location.hash);
+    function smoothScrollTo(targetId) {
+      const target = document.querySelector(targetId);
       if (target) {
         const elementPosition = target.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - headerOffset;
@@ -639,8 +615,37 @@
         });
       }
     }
-  });
-</script>
+
+    // Handle clicks on nav links
+    document.querySelectorAll("a.nav-link").forEach(link => {
+      link.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+
+        if (href && href.startsWith("#")) {
+          e.preventDefault();
+
+          if (href === "#" || href === "#home") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            history.pushState(null, null, "#"); // update URL
+          } else {
+            smoothScrollTo(href);
+            history.pushState(null, null, href); // update URL hash
+          }
+        }
+      });
+    });
+
+    // When the page first loads with a hash
+    window.addEventListener("DOMContentLoaded", () => {
+      if (window.location.hash) {
+        setTimeout(() => {
+          smoothScrollTo(window.location.hash);
+        }, 200);
+      }
+    });
+  </script>
+
+
 
 
 </body>
