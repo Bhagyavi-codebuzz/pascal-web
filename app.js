@@ -571,8 +571,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Handle initial page load based on URL hash
     const hash = window.location.hash.substring(1);
-    if (hash && ['home', 'services', 'about', 'contact'].includes(hash)) {
-        window.pageManager.showPage(hash);
+    if (hash) {
+        if (['home', 'services', 'about', 'contact'].includes(hash)) {
+            window.pageManager.showPage(hash);
+        } else {
+            const el = document.getElementById(hash);
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
     }
 });
 

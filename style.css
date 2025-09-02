@@ -1095,8 +1095,11 @@ p {
 
 /* About Preview */
 .about-preview {
-  padding: 80px 0;
+  padding-top: 80px;
   background: var(--white);
+}
+.contact-section{
+  padding-top: 80px;
 }
 
 .about-content {
@@ -1592,9 +1595,11 @@ select.form-control {
     font-size: 2rem;
   }
 
-  .services-overview,
-  .about-preview {
+  .services-overview {
     padding: 60px 0;
+  }
+  .about-preview{
+    padding-top: 60px;
   }
 
   .service-card,

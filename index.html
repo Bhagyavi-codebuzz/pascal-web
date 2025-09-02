@@ -22,7 +22,7 @@
 
       </div>
       <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Home</a></li>
         <li><a href="#services-overview" class="nav-link">Services</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -36,22 +36,21 @@
   </nav>
 
   <!-- Homepage -->
-  <section id="home" class="page active">
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="container">
-        <div class="hero-content" style="position: relative; z-index: 99;">
-          <h1>Empowering Telecommunications Through Innovation</h1>
-          <p>Leading provider of end-to-end telecommunications solutions, specializing in RF engineering, network
-            deployment, technical training, and digital transformation services.</p>
-          <div class="hero-buttons">
-            <button class="btn btn--primary" onclick="navigateToSection('contact')">Get Started</button>
-            <!--<button class="btn btn--outline" onclick="navigateToSection('services')">Our Services</button> -->
-          </div>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-content" style="position: relative; z-index: 99;">
+        <h1>Empowering Telecommunications Through Innovation</h1>
+        <p>Leading provider of end-to-end telecommunications solutions, specializing in RF engineering, network
+          deployment, technical training, and digital transformation services.</p>
+        <div class="hero-buttons">
+          <button class="btn btn--primary" onclick="navigateToSection('contact')">Get Started</button>
+          <!--<button class="btn btn--outline" onclick="navigateToSection('services')">Our Services</button> -->
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  <!-- </section> -->
 
   <!-- Services Overview-->
 
@@ -66,7 +65,8 @@
       <p class="section-subtitle">End-to-end telecommunications and digital solutions for modern enterprises</p>
 
       <div class="services-grid" class="row g-3">
-        <div class="service-card col-lg-4 col-sm-6 col-12" style="padding:20px; border-radius:12px; background:#f0f8ff;">
+        <div class="service-card col-lg-4 col-sm-6 col-12"
+          style="padding:20px; border-radius:12px; background:#f0f8ff;">
           <div class="service-icon">📡</div>
           <h3>Network Engineering</h3>
           <p>Expert RF engineering, RAN services, and wireless network design for LTE/5G deployments.</p>
@@ -575,7 +575,7 @@
 
   <script src="app.js"></script>
 
-  <script>
+  <!-- <script>
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 
@@ -597,7 +597,52 @@
       });
     });
 
+  </script> -->
+
+  <script>
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+
+        if (href === "#" || href === "#home") {
+          e.preventDefault();
+          // scroll to top
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          // normal navigation logic
+          const id = href.replace("index.html", "").replace("#", "");
+          if (id) {
+            e.preventDefault();
+            const el = document.getElementById(id);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }
+        }
+      });
+    });
+
   </script>
+
+  <script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const headerOffset = 68;
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }
+  });
+</script>
+
+
 </body>
 
 </html>
