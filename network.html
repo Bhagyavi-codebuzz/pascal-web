@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- Header / Navbar -->
   <nav class="navbar">
@@ -20,74 +22,105 @@
         <li><a href="index.html#about" class="nav-link">About</a></li>
         <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
   <!-- Main Content -->
-  <main class="service-page">
+  <main class="service-page" style="padding-top: 100px;">
     <div class="container">
       <div class="page-hero">
         <h1>Network Engineering</h1>
-        <p class="section-subtitle">End-to-end LTE and 5G network solutions designed to maximize performance, coverage, and scalability.</p>
+        <p class="section-subtitle">End-to-end LTE and 5G network solutions designed to maximize performance, coverage,
+          and scalability.</p>
       </div>
 
       <div class="service-detail-content">
         <h2>Our Network Engineering Services Include:</h2>
         <div class="services-grid">
-  <div class="service-card">
-    <div class="service-icon">📡</div>
-    <h3>RF Engineering & Design</h3>
-    <p>Detailed RF planning, site surveys, spectrum analysis, and antenna optimization to ensure maximum coverage and signal quality.</p>
-  </div>
+          <div class="service-card">
+            <div class="service-icon">📡</div>
+            <h3>RF Engineering & Design</h3>
+            <p>Detailed RF planning, site surveys, spectrum analysis, and antenna optimization to ensure maximum
+              coverage and signal quality.</p>
+          </div>
 
-  <div class="service-card">
-    <div class="service-icon">📶</div>
-    <h3>RAN Services</h3>
-    <p>Radio Access Network design, deployment, and optimization for high-performance LTE/5G networks.</p>
-  </div>
+          <div class="service-card">
+            <div class="service-icon">📶</div>
+            <h3>RAN Services</h3>
+            <p>Radio Access Network design, deployment, and optimization for high-performance LTE/5G networks.</p>
+          </div>
 
-  <div class="service-card">
-    <div class="service-icon">⚡</div>
-    <h3>Packet Switch Services</h3>
-    <p>Integration and configuration of core network elements for reliable data traffic handling.</p>
-  </div>
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Packet Switch Services</h3>
+            <p>Integration and configuration of core network elements for reliable data traffic handling.</p>
+          </div>
 
-  <div class="service-card">
-    <div class="service-icon">🛰️</div>
-    <h3>LTE/5G Network Planning & Design</h3>
-    <p>Comprehensive network planning including topology, capacity, and scalability strategies.</p>
-  </div>
+          <div class="service-card">
+            <div class="service-icon">🛰️</div>
+            <h3>LTE/5G Network Planning & Design</h3>
+            <p>Comprehensive network planning including topology, capacity, and scalability strategies.</p>
+          </div>
 
-  <div class="service-card">
-    <div class="service-icon">🔧</div>
-    <h3>Wireless Network Deployment</h3>
-    <p>On-site installation, integration, and commissioning of network components with minimal downtime.</p>
-  </div>
+          <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Wireless Network Deployment</h3>
+            <p>On-site installation, integration, and commissioning of network components with minimal downtime.</p>
+          </div>
 
-  <div class="service-card">
-    <div class="service-icon">📈</div>
-    <h3>Network Performance Assurance & Optimization</h3>
-    <p>Continuous monitoring, troubleshooting, and fine-tuning to ensure optimal throughput and user experience.</p>
-  </div>
-</div>
+          <div class="service-card">
+            <div class="service-icon">📈</div>
+            <h3>Network Performance Assurance & Optimization</h3>
+            <p>Continuous monitoring, troubleshooting, and fine-tuning to ensure optimal throughput and user experience.
+            </p>
+          </div>
+        </div>
 
-  <div class="highlight-card">
-    <div class="highlight-icon"></div>
-    <h2>Our Approach</h2>
-    <p>We follow a systematic methodology: assessment, design, deployment, and continuous optimization. This ensures every network we deliver meets the highest standards of reliability, performance, and security.</p>
-  </div>
+        <div class="highlight-card">
+          <div class="highlight-icon"></div>
+          <h2>Our Approach</h2>
+          <p>We follow a systematic methodology: assessment, design, deployment, and continuous optimization. This
+            ensures every network we deliver meets the highest standards of reliability, performance, and security.</p>
+        </div>
 
-  <div style="text-align:center; margin-top:30px;">
-    <a href="index.html#services" class="btn btn--primary btn--small">🔍 Back to Services</a>
-  </div>
-</div>
-</main>
+        <div style="text-align:center; margin-top:30px;">
+          <a href="index.html#services" class="btn btn--primary btn--small">🔍 Back to Services</a>
+        </div>
+      </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Pascal Enterprise. All rights reserved.</p>
+      <p style="color: white; text-align: center;">&copy; 2025 Pascal Enterprise. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      navToggle.classList.toggle("active");
+    });
+
+    // Close menu when clicking a link (optional)
+    document.querySelectorAll(".nav-link").forEach(link =>
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        navToggle.classList.remove("active");
+      })
+    );
+  </script>
+
+
 </body>
+
 </html>

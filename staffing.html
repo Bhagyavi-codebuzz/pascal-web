@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- Header / Navbar -->
   <nav class="navbar">
@@ -20,15 +22,21 @@
         <li><a href="index.html#about" class="nav-link">About</a></li>
         <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
   <!-- Main Content -->
-  <main class="service-page">
+  <main class="service-page" style="padding-top: 100px;">
     <div class="container">
       <div class="page-hero">
         <h1>Staffing & Augmentation</h1>
-        <p class="section-subtitle">Flexible staffing solutions providing skilled engineers, consultants, and project managers for telecom projects.</p>
+        <p class="section-subtitle">Flexible staffing solutions providing skilled engineers, consultants, and project
+          managers for telecom projects.</p>
       </div>
 
       <div class="service-detail-content">
@@ -37,7 +45,8 @@
           <div class="service-card">
             <div class="service-icon">👷‍♂️</div>
             <h3>Staff Augmentation</h3>
-            <p>Supply of experienced network engineers, RF specialists, and technical experts for short- or long-term projects.</p>
+            <p>Supply of experienced network engineers, RF specialists, and technical experts for short- or long-term
+              projects.</p>
           </div>
 
           <div class="service-card">
@@ -74,7 +83,9 @@
         <div class="highlight-card">
           <div class="highlight-icon"></div>
           <h2>Our Approach</h2>
-          <p>We carefully assess your project needs, match qualified resources, and manage assignments to ensure your telecom operations achieve optimal performance. Flexibility, reliability, and expertise define our staffing solutions.</p>
+          <p>We carefully assess your project needs, match qualified resources, and manage assignments to ensure your
+            telecom operations achieve optimal performance. Flexibility, reliability, and expertise define our staffing
+            solutions.</p>
         </div>
 
         <div style="text-align:center; margin-top:30px;">
@@ -87,8 +98,28 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Pascal Enterprise. All rights reserved.</p>
+      <p style="text-align: center; color: white;">&copy; 2025 Pascal Enterprise. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+  // Mobile nav toggle
+  const navToggle = document.querySelector(".nav-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    navToggle.classList.toggle("active");
+  });
+
+  // Close menu when clicking a link (optional)
+  document.querySelectorAll(".nav-link").forEach(link =>
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      navToggle.classList.remove("active");
+    })
+  );
+</script>
+
 </body>
+
 </html>
