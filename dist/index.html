@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pascal Enterprise - Empowering Telecommunications Through Innovation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <!--<h2>Pascal Enterprise</h2>-->
+        <!-- <img src="logo.png" alt="Pascal Enterprise Logo" style="width:150px; height: 50px;"> -->
+        <a href="#home" class="logo">
+          <img src="logo.jpg" alt="Pascal Enterprise Logo" style="width:150px; height:50px; cursor:pointer;">
+        </a>
+
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#services-overview" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Homepage -->
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-content" style="position: relative; z-index: 99;">
+        <h1>Empowering Telecommunications Through Innovation</h1>
+        <p>Leading provider of end-to-end telecommunications solutions, specializing in RF engineering, network
+          deployment, technical training, and digital transformation services.</p>
+        <div class="hero-buttons">
+          <button class="btn btn--primary" onclick="navigateToSection('contact')">Get Started</button>
+          <!--<button class="btn btn--outline" onclick="navigateToSection('services')">Our Services</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </section> -->
+
+  <!-- Services Overview-->
+
+  <!-- <div class="services-overview">  -->
+  <section id="services-overview" class="services services-overview">
+    <div class="container">
+      <h2>Our Services</h2>
+      <!-- <h2 style="cursor:pointer;" onclick="navigateToSection('services')">
+  Our Services
+</h2> -->
+
+      <p class="section-subtitle">End-to-end telecommunications and digital solutions for modern enterprises</p>
+
+      <div class="services-grid" class="row g-3">
+        <div class="service-card col-lg-4 col-sm-6 col-12"
+          style="padding:20px; border-radius:12px; background:#f0f8ff;">
+          <div class="service-icon">📡</div>
+          <h3>Network Engineering</h3>
+          <p>Expert RF engineering, RAN services, and wireless network design for LTE/5G deployments.</p>
+          <a href="network.html" style="display:inline-flex; align-items:center; justify-content:center; 
+          width:40px; height:40px; background:#4f91f7; color:white;
+          border-radius:6px; text-decoration:none; font-size:1rem;">
+            &#8594;
+          </a>
+        </div>
+        <!-- <div class="service-card col-lg-4 col-sm-6 col-12">
+          <div class="service-icon">📡</div>
+          <h3>Network Engineering</h3>
+          <p>Expert RF engineering, RAN services, and wireless network design for LTE/5G deployments.</p>
+        </div> -->
+
+
+        <!-- Service 2 -->
+        <div class="service-card col-lg-4 col-sm-6 col-12"
+          style="padding:20px; border-radius:12px; background:#f0f8ff;">
+          <div class="service-icon">🎓</div>
+          <h3>Training & Competence Development</h3>
+          <p>Specialized technical training programs, certifications, and e-learning platforms for telecom
+            professionals.</p>
+          <a href="training.html" style="display:inline-flex; align-items:center; justify-content:center; 
+          width:40px; height:40px; background:#4f91f7; color:white;
+          border-radius:6px; text-decoration:none; font-size:1rem;">
+            &#8594;
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card col-lg-4 col-sm-6 col-12"
+          style="padding:20px; border-radius:12px; background:#f0f8ff;">
+          <div class="service-icon">👥</div>
+          <h3>Staffing & Augmentation</h3>
+          <p>Flexible staffing solutions providing skilled engineers, consultants, and project managers for telecom
+            projects.</p>
+          <a href="staffing.html" style="display:inline-flex; align-items:center; justify-content:center; 
+          width:40px; height:40px; background:#4f91f7; color:white;
+          border-radius:6px; text-decoration:none; font-size:1rem;">
+            &#8594;
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card col-lg-4 col-sm-6 col-12"
+          style="padding:20px; border-radius:12px; background:#f0f8ff;">
+          <div class="service-icon">⚙️</div>
+          <h3>Software & Automation</h3>
+          <p>Custom-built automation platforms and software solutions to streamline network deployment and operations.
+          </p>
+          <a href="software.html" style="display:inline-flex; align-items:center; justify-content:center; 
+          width:40px; height:40px; background:#4f91f7; color:white;
+          border-radius:6px; text-decoration:none; font-size:1rem;">
+            &#8594;
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card col-lg-4 col-sm-6 col-12"
+          style="padding:20px; border-radius:12px; background:#f0f8ff;">
+          <div class="service-icon">🚀</div>
+          <h3>Digital Transformation</h3>
+          <p>Comprehensive IoT, modernization, and digital strategy solutions to prepare enterprises for the future.</p>
+          <a href="digital.html" style="display:inline-flex; align-items:center; justify-content:center; 
+          width:40px; height:40px; background:#4f91f7; color:white;
+          border-radius:6px; text-decoration:none; font-size:1rem;">
+            &#8594;
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card col-lg-4 col-sm-6 col-12"
+          style="padding:20px; border-radius:12px; background:#f0f8ff;">
+          <div class="service-icon">🎥</div>
+          <h3>Audio/Video Services</h3>
+          <p>Professional AV integration, video conferencing, and unified communications solutions for enterprises.</p>
+          <a href="av.html" style="display:inline-flex; align-items:center; justify-content:center; 
+          width:40px; height:40px; background:#4f91f7; color:white;
+          border-radius:6px; text-decoration:none; font-size:1rem;">
+            &#8594;
+          </a>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- About Preview -->
+  <section id="about" class="about-preview">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Leading Innovation in Telecommunications</h2>
+          <p>With over 20 years of industry experience and 500+ successful projects, Pascal Enterprise stands at the
+            forefront of telecommunications innovation. Our expert team of RF engineers and technical specialists
+            delivers cutting-edge solutions that drive network performance and business growth.</p>
+
+          <!-- Expand Button -->
+          <div><button class="btn btn--primary" onclick="toggleAboutDetails(this)">Learn More About Us</button></div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <h3>20+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat">
+            <h3>500+</h3>
+            <p>Successful Projects</p>
+          </div>
+          <div class="stat">
+            <h3>100%</h3>
+            <p>Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden About Details -->
+    <div id="aboutDetails" style="display:none; margin-top:40px;">
+      <div class="container">
+        <!-- Hero / Intro -->
+        <div class="about-hero"
+          style="display:flex; flex-direction:column; gap:40px; background:#f0f8ff; padding:60px; border-radius:20px; color:#000; text-align:center;">
+          <!-- <h1 style="font-size:3rem; margin-bottom:20px;"><span>🏢</span> About Pascal Enterprise</h1> -->
+          <h1 style="font-size:3rem; margin-bottom:20px; font-weight:900; color:#1a1a1a; text-align:center;">
+            <span style="margin-right:10px;">🏢</span> About Pascal Enterprise
+          </h1>
+
+          <p style="font-size:1.25rem; margin-bottom:20px;"><span></span> Your trusted partner in telecommunications
+            innovation</p>
+          <p style="font-size:1.1rem; line-height:1.6;">
+            With over 20 years of industry experience and 500+ successful projects, Pascal Enterprise stands at the
+            forefront of telecommunications innovation. Our expert team of RF engineers and technical specialists
+            delivers cutting-edge solutions that drive network performance and business growth.
+          </p>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="about-section" style="display:flex; flex-wrap:wrap; gap:40px; margin-top:40px;">
+          <div class="mission"
+            style="flex:1; min-width:300px; background:#f0f8ff; padding:30px; border-radius:20px; box-shadow:0 10px 20px rgba(0,0,0,0.1);">
+            <h2><span>🎯</span> Our Mission</h2>
+            <p>To empower telecommunications companies and enterprises with innovative, end-to-end solutions that drive
+              network performance, operational efficiency, and business growth.</p>
+          </div>
+          <div class="vision"
+            style="flex:1; min-width:300px; background:#f0f8ff; padding:30px; border-radius:20px; box-shadow:0 10px 20px rgba(0,0,0,0.1);">
+            <h2><span>🌟</span> Our Vision</h2>
+            <p>To be the leading global provider of telecommunications engineering and training solutions, enabling the
+              future of connected communications.</p>
+          </div>
+        </div>
+
+        <!-- Core Expertise -->
+        <!-- <h2 style="margin-top:40px;">Core Expertise</h2> -->
+        <h2 style="margin-top:40px; font-size:28px; font-weight:bold; color:#1a1a1a; text-align:center;">
+          Core Expertise
+        </h2>
+        <div class="expertise-grid"
+          style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px;">
+          <div style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">🛠️</div>
+            <p>20+ years industry experience</p>
+          </div>
+          <div style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">✅</div>
+            <p>500+ successful projects</p>
+          </div>
+          <div style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">👷‍♂️</div>
+            <p>Expert team of RF engineers</p>
+          </div>
+          <div style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">📚</div>
+            <p>Comprehensive training programs</p>
+          </div>
+          <div style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">💻</div>
+            <p>Cutting-edge automation tools</p>
+          </div>
+        </div>
+
+        <!-- Values -->
+        <!-- <h2 style="margin-top:40px;">Our Values</h2> -->
+        <h2 style="margin-top:40px; font-size:28px; font-weight:bold; color:#1a1a1a; text-align:center;">
+          Our Values
+        </h2>
+
+
+        <div class="values-grid"
+          style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px;">
+          <div style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">🏆</div>
+            <h3>Excellence</h3>
+            <p>Delivering superior quality in every project</p>
+          </div>
+          <div style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">🔒</div>
+            <h3>Reliability</h3>
+            <p>Trusted solutions you can depend on</p>
+          </div>
+          <div style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">🤝</div>
+            <h3>Customer Success</h3>
+            <p>Your success is our primary focus</p>
+          </div>
+          <div style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center;">
+            <div style="font-size:36px;">🧠</div>
+            <h3>Technical Expertise</h3>
+            <p>Deep knowledge and proven experience</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 style="display:flex; align-items:center; justify-content:center; gap:12px;">
+        <!-- <span>📞</span>--> Contact Us
+      </h2>
+      <p class="section-subtitle" style="display:flex; align-items:center; justify-content:center; gap:8px;">
+        Ready to transform your telecommunications infrastructure? Get in touch with our experts.
+      </p>
+
+      <div class="contact-content" style="gap:40px; margin-top:40px;">
+        <!-- Contact Form -->
+        <div class="contact-form-section"
+          style="flex:1; background:#f0f8ff; padding:30px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+          <h2 style="display:flex; align-items:center; gap:10px;">
+            <img src="email.svg" alt="email" style="width:30px; margin-right: 10px;">
+            Send Us a Message
+          </h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="company" class="form-label">Company</label>
+              <input type="text" id="company" name="company" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="service" class="form-label">Service of Interest</label>
+              <select id="service" name="service" class="form-control">
+                <option value="">Select a service...</option>
+                <option value="rf-engineering">RF Engineering Services</option>
+                <option value="network-integration">Network Integration</option>
+                <option value="training">Training & Development</option>
+                <option value="staffing">Staffing Solutions</option>
+                <option value="software">Software & Automation</option>
+                <option value="digital-transformation">Digital Transformation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full-width" style="margin-top:10px;">Send
+              Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section" style="flex:1;">
+          <h2 style="display:flex; align-items:center; gap:10px;">
+            <span>📍</span> Get in Touch
+          </h2>
+          <div class="contact-info" style="margin-top:20px;">
+            <div class="contact-item" style="display:flex;  gap:8px; margin-bottom:15px;">
+              <img src="phone.svg" alt="phone" style="width:20px;height:33px;  margin-right: 10px;">
+              <div>
+                <h3>Phone</h3>
+                <a href="tel:+16474623645">
+                  <p>+1 (647) 462-3645</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact-item" style="display:flex; gap:8px; margin-bottom:15px;">
+              <img src="email.svg" alt="email" style="width:20px;height:33px; margin-right: 10px;">
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:info@pascalenterprise.com">
+                  <p>info@pascalenterprise.com</p>
+                </a>
+              </div>
+            </div>
+            <div class="contact-item" style="display:flex; gap:8px; margin-bottom:15px;">
+              <img src="address.svg" alt="address" style="width:20px;height:33px; margin-right: 10px;">
+              <div>
+                <h3>Address</h3>
+                <p>3089 Turner Cres<br>London ON N6M 0J8</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="margin-top:30px; display:flex; gap:10px; color:#000;">
+            <span>👥</span> Department Contacts
+          </h3>
+
+          <div class="department-contacts" style="margin-top:15px;">
+            <div class="department" style="display:flex; gap:8px; margin-bottom:10px;">
+              <img src="sales.svg" alt="sales" style="width:20px; height:33px; margin-right: 10px;">
+              <div>
+                <h4>Sales</h4>
+                <a href="mailto:sales@pascalenterprise.com">
+                  <p>sales@pascalenterprise.com</p>
+                </a>
+              </div>
+            </div>
+            <div class="department" style="display:flex; gap:8px; margin-bottom:10px;">
+              <img src="training.svg" alt="training" style="width:20px; height:33px; margin-right: 10px;">
+              <div>
+                <h4>Training</h4>
+                <a href="mailto:training@pascalenterprise.com">
+                  <p>training@pascalenterprise.com</p>
+                </a>
+              </div>
+            </div>
+            <div class="department" style="display:flex; gap:8px;">
+              <img src="support.svg" alt="support" style="width:20px; height:33px; margin-right: 10px;">
+              <div>
+                <h4>Support</h4>
+                <a href="mailto:support@pascalenterprise.com">
+                  <p>support@pascalenterprise.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="page">
+    <div class="container">
+      <!-- Hero / Intro -->
+      <!-- About Hero -->
+      <div class="about-hero"
+        style="display:flex; flex-direction:column; gap:40px; margin-bottom:80px; background:#f0f8ff; padding:60px; border-radius:20px; color:#000; text-align:center;">
+        <div class="about-text" style="animation: fadeIn 1s ease;">
+          <h1
+            style="font-size:3rem; margin-bottom:20px; display:flex; align-items:center; justify-content:center; gap:15px;">
+            <span>🏢</span> About Pascal Enterprise
+          </h1>
+          <p class="section-subtitle"
+            style="font-size:1.25rem; margin-bottom:20px; display:flex; align-items:center; justify-content:center; gap:10px;">
+            <span>💡</span> Your trusted partner in telecommunications innovation
+          </p>
+          <p style="font-size:1.1rem; line-height:1.6;">
+            With over 20 years of industry experience and 500+ successful projects, Pascal Enterprise stands at the
+            forefront of telecommunications innovation. Our expert team of RF engineers and technical specialists
+            delivers cutting-edge solutions that drive network performance and business growth.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Mission & Vision -->
+      <div class="about-section two-columns" style="display:flex; flex-wrap:wrap; gap:40px; margin-bottom:80px;">
+        <div class="mission"
+          style="flex:1; min-width:300px; background:#f0f8ff; padding:30px; border-radius:20px; box-shadow:0 10px 20px rgba(0,0,0,0.1); animation: fadeInLeft 1s ease;">
+          <h2 style="margin-bottom:15px; display:flex; align-items:center; gap:10px;">
+            <span>🎯</span> Our Mission
+          </h2>
+          <p>To empower telecommunications companies and enterprises with innovative, end-to-end solutions that drive
+            network performance, operational efficiency, and business growth.</p>
+        </div>
+        <div class="vision"
+          style="flex:1; min-width:300px; background:#f0f8ff; padding:30px; border-radius:20px; box-shadow:0 10px 20px rgba(0,0,0,0.1); animation: fadeInRight 1s ease;">
+          <h2 style="margin-bottom:15px; display:flex; align-items:center; gap:10px;">
+            <span>🌟</span> Our Vision
+          </h2>
+          <p>To be the leading global provider of telecommunications engineering and training solutions, enabling the
+            future of connected communications.</p>
+        </div>
+      </div>
+
+      <!-- Core Expertise -->
+      <h2 style="margin-bottom:20px;">Core Expertise</h2>
+      <div class="expertise-grid"
+        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px; margin-bottom:60px;">
+        <div class="expertise-item"
+          style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">🛠️</div>
+          <p>20+ years industry experience</p>
+        </div>
+        <div class="expertise-item"
+          style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">✅</div>
+          <p>500+ successful projects</p>
+        </div>
+        <div class="expertise-item"
+          style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">👷‍♂️</div>
+          <p>Expert team of RF engineers</p>
+        </div>
+        <div class="expertise-item"
+          style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">📚</div>
+          <p>Comprehensive training programs</p>
+        </div>
+        <div class="expertise-item"
+          style="background:#f0f8ff; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">💻</div>
+          <p>Cutting-edge automation tools</p>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <h2 style="margin-bottom:20px;">Our Values</h2>
+      <div class="values-grid"
+        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px;">
+        <div class="value-item"
+          style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">🏆</div>
+          <h3>Excellence</h3>
+          <p>Delivering superior quality in every project</p>
+        </div>
+        <div class="value-item"
+          style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">🔒</div>
+          <h3>Reliability</h3>
+          <p>Trusted solutions you can depend on</p>
+        </div>
+        <div class="value-item"
+          style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">🤝</div>
+          <h3>Customer Success</h3>
+          <p>Your success is our primary focus</p>
+        </div>
+        <div class="value-item"
+          style="background:#f9f9f9; padding:20px; border-radius:12px; text-align:center; transition:0.3s;">
+          <div style="font-size:36px;">🧠</div>
+          <h3>Technical Expertise</h3>
+          <p>Deep knowledge and proven experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <!-- <h3>Pascal Enterprise</h3> -->
+          <!-- <a href="#home" class="nav-link active">Pascal Enterprise</a> -->
+          <!-- <h2 style="cursor:pointer;" onclick="navigateToSection('home')">
+                        Pascal Enterprise
+                     </h2>  -->
+          <a href="#home">
+            <img src="logo_footer.png" alt="Pascal Enterprise Logo" style="width:150px; height:auto; cursor:pointer;">
+          </a>
+          <p> Empowering Telecommunications Through Innovation</p>
+        </div>
+        <div class="footer-section">
+          <!-- <h4>Services</h4>  -->
+          <h2 style="cursor:pointer; color:#fff;" onclick="navigateToSection('services-overview')">
+            Services
+          </h2>
+          <ul>
+            <li><a href="#services-overview">Network Engineering</a></li>
+            <li><a href="#services-overview">Training & Competence Development</a></li>
+            <li><a href="#services-overview">Staffing and Augmentation</a></li>
+            <li><a href="#services-overview">Software and Automation</a></li>
+            <li><a href="#services-overview">Digital Transformation</a></li>
+            <li><a href="#services-overview">Audio/Video Services</a></li>
+          </ul>
+        </div>
+        <!-- <div class="footer-section">
+                     <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                    </ul> 
+                </div> -->
+        <div class="footer-section">
+          <!-- <h4>Contact</h4> -->
+          <h2 style="cursor:pointer;  color:#fff;" onclick="navigateToSection('contact')">
+            Contact
+          </h2>
+          <a href="tel:+16474623645">
+            <p>+1 (647) 462-3645</p>
+          </a>
+          <a href="mailto:info@pascalenterprise.com">
+            <p>info@pascalenterprise.com</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Pascal Enterprise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="app.js"></script>
+
+  <script>
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-menu .nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+  </script>
+
+  <script>
+    const headerOffset = 68; // fixed header height
+
+    function smoothScrollTo(targetId) {
+      const target = document.querySelector(targetId);
+      if (target) {
+        const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }
+
+    // Handle clicks on nav links
+    document.querySelectorAll("a.nav-link").forEach(link => {
+      link.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+
+        if (href && href.startsWith("#")) {
+          e.preventDefault();
+
+          if (href === "#" || href === "#home") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            history.pushState(null, null, "#"); // update URL
+          } else {
+            smoothScrollTo(href);
+            history.pushState(null, null, href); // update URL hash
+          }
+        }
+      });
+    });
+
+    // When the page first loads with a hash
+    window.addEventListener("DOMContentLoaded", () => {
+      if (window.location.hash) {
+        setTimeout(() => {
+          smoothScrollTo(window.location.hash);
+        }, 200);
+      }
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>

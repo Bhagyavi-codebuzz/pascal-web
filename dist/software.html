@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software & Automation - Pascal Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg">
+
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="logo.png" alt="Pascal Enterprise Logo" style="width:150px; height: 50px;">
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#services-overview" class="nav-link active">Services</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="service-page" style="padding-top: 100px;">
+    <div class="container">
+      <div class="page-hero">
+        <h1>Software & Automation</h1>
+        <p class="section-subtitle">Custom-built automation platforms and software solutions to streamline network
+          deployment and operations.</p>
+      </div>
+
+      <div class="service-detail-content">
+        <h2>Our Software & Automation Services Include:</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🤖</div>
+            <h3>Automation Platforms</h3>
+            <p>Development of software tools for automating network monitoring, configuration, and maintenance tasks.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Network Operations Software</h3>
+            <p>Custom solutions to optimize network management and reduce operational costs.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📈</div>
+            <h3>Machine Learning Solutions</h3>
+            <p>AI-driven analytics to enhance network performance and predictive maintenance.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">💾</div>
+            <h3>Custom Software Development</h3>
+            <p>Tailored applications for telecom-specific requirements and enterprise integration.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3>Performance Monitoring</h3>
+            <p>Real-time monitoring solutions to ensure network reliability and service quality.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Deployment Automation</h3>
+            <p>Streamlined deployment processes to reduce errors, downtime, and operational complexity.</p>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon"></div>
+          <h2>Our Approach</h2>
+          <p>We follow a structured approach: assess requirements, develop tailored software, integrate with existing
+            systems, and provide ongoing support and optimization. Our solutions empower businesses to operate smarter,
+            faster, and more efficiently.</p>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <a href="index.html#services" class="btn btn--primary btn--small">🔍 Back to Services</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p style="text-align: center; color: white;">&copy; 2025 Pascal Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      navToggle.classList.toggle("active");
+    });
+
+    // Close menu when clicking a link (optional)
+    document.querySelectorAll(".nav-link").forEach(link =>
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        navToggle.classList.remove("active");
+      })
+    );
+  </script>
+
+</body>
+
+</html>

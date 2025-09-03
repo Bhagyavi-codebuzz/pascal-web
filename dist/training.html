@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training & Competence Development - Pascal Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg">
+
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="logo.png" alt="Pascal Enterprise Logo" style="width:150px; height: 50px;">
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#services-overview" class="nav-link active">Services</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="service-page" style="padding-top: 100px;">
+    <div class="container">
+      <div class="page-hero">
+        <h1>Training & Competence Development</h1>
+        <p class="section-subtitle">Specialized technical training programs, certifications, and e-learning platforms
+          for telecom professionals.</p>
+      </div>
+
+      <div class="service-detail-content">
+        <h2>Our Training Services Include:</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">📡</div>
+            <h3>LTE Technology Training</h3>
+            <p>Comprehensive training on LTE network design, implementation, and optimization.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📶</div>
+            <h3>5G Training Programs</h3>
+            <p>Advanced courses on 5G architecture, deployment, and performance monitoring.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎓</div>
+            <h3>Technical Certifications</h3>
+            <p>Industry-recognized certifications to validate skills and knowledge for telecom professionals.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>E-Learning Platforms</h3>
+            <p>Flexible online learning solutions for remote skill development and continuous education.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Competence Development</h3>
+            <p>Customized programs to enhance technical and managerial capabilities of telecom teams.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📝</div>
+            <h3>Workshops & Bootcamps</h3>
+            <p>Hands-on sessions to apply theoretical knowledge in real-world scenarios.</p>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon"></div>
+          <h2>Our Approach</h2>
+          <p>We design our training programs based on industry trends, client requirements, and skill gaps. Combining
+            theoretical lessons, practical exercises, and assessments, we ensure participants not only learn but can
+            effectively apply their skills in real-world telecom environments.</p>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <a href="index.html#services" class="btn btn--primary btn--small">🔍 Back to Services</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p style="color: white; text-align: center;">&copy; 2025 Pascal Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      navToggle.classList.toggle("active");
+    });
+
+    // Close menu when clicking a link (optional)
+    document.querySelectorAll(".nav-link").forEach(link =>
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        navToggle.classList.remove("active");
+      })
+    );
+  </script>
+
+</body>
+
+</html>
