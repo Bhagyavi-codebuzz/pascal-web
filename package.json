@@ -5,13 +5,15 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx rimraf dist && mkdir -p dist && npx copyfiles -a *.html *.css *.js *.png *.jpg *.jpeg *.gif *.svg dist && npx copyfiles -a css/** js/** img/** images/** dist"
+    "build": "npx rimraf dist && mkdir -p dist && npx copyfiles -a *.html *.css *.js *.png *.jpg *.jpeg *.gif *.svg dist && npx copyfiles -a css/** js/** img/** images/** dist",
+    "start": "npx serve dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "rimraf": "^5.0.0",
     "copyfiles": "^2.4.1",
-    "rimraf": "^6.0.1"
+    "serve": "^14.2.0"
   }
 }
