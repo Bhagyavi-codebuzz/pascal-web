@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && mkdir dist && copyfiles -a *.html *.css *.js *.png *.jpg *.jpeg *.gif *.svg dist && copyfiles -a css/** js/** img/** images/** dist"
+    "build": "npx rimraf dist && mkdir -p dist && npx copyfiles -a *.html *.css *.js *.png *.jpg *.jpeg *.gif *.svg dist && npx copyfiles -a css/** js/** img/** images/** dist"
   },
   "keywords": [],
   "author": "",
