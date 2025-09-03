@@ -1,0 +1,17 @@
+{
+  "name": "exported-assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && mkdir dist && copyfiles -a *.html *.css *.js *.png *.jpg *.jpeg *.gif *.svg dist && copyfiles -a css/** js/** img/** images/** dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1"
+  }
+}
