@@ -2,17 +2,10 @@
   "name": "exported-assets",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "scripts": {
-    "build": "npx rimraf dist && mkdir -p dist && npx copyfiles -a *.html *.css *.js *.png *.jpg *.jpeg *.gif *.svg dist && npx copyfiles -a css/** js/** img/** images/** dist",
-    "start": "npx serve dist"
+    "start": "npx serve public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "copyfiles": "^2.4.1",
-    "rimraf": "^5.0.0",
     "serve": "^14.2.0"
   }
 }
